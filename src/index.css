@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tile {
+  /* background-image: url(./assets/grass.png); */
+  /* height: calc(100vh / 10); */
+  /* height: 10px; */
+  /* width: calc(100vh / 10); */
+  height: 9vh;
+  width: 12vw;
+  border: solid black 1px;
+}
+.tile-green {
+  /* background: green; */
+  background: url(./assets/tree.png) no-repeat center center,
+    url(./assets/grass.png);
+  /* background: url(./assets/tree.png) no-repeat center center; */
+}
+.tile-black {
+  /* background: #161313; */
+  /* background: url(./assets/grass.png); */
+  background: url(./assets/wooden.png);
+}
+.tile-red {
+  /* background: red; */
+  background: url(./assets/floor_mud.png);
+}
+html {
+  /* background: url(./assets/pexels-gantas-vaičiulėnas-3750272.jpg) no-repeat
+    center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
