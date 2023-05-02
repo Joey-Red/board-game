@@ -13,9 +13,9 @@ function Card(props) {
     } else if (cardType === "tree") {
       setImg(tree);
     }
-  }, []);
+  }, [cardType]);
   return (
-    <div className="w-[7vw] h-[16vh] rounded bg-white flex justify-center items-center">
+    <div className="w-[14vh] h-[19.6vh] rounded bg-neutral-900 flex justify-center items-center border border-black">
       <img src={img} className="h-[3rem]" alt="" />
     </div>
   );
